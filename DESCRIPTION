@@ -1,0 +1,11 @@
+Package: rqpcr
+Title: qPCR data processing package
+Version: 0.1
+Authors@R: person("Jesse", "Raab", email = "jesse.r.raab@gmail.com",
+    role = c("aut", "cre"))
+Description: Functions to process qPCR data
+Depends:
+    R (>= 3.1.1),
+    dplyr(>= 0.3)
+License: MIT
+LazyData: true
