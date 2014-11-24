@@ -9,7 +9,7 @@ negative_control(df, primer)
 \arguments{
 \item{df}{data frame must have columns Well, Cq, Sample, Group, Primer.}
 
-\item{Primer}{to compare values to}
+\item{primer}{to compare values to}
 }
 \description{
 Compare values to a negative control locus
