@@ -22,12 +22,12 @@ rel_to_primer = function(df, primer) {
 #' @param sample name of the sample to be used as the control
 
 
-rel_to_sample <- function(df, col, sample, log2=F) {
-  control <- df[df$Sample == sample, ]$val
-  if (is.null(control)) { print(df) }
+rel_to_sample <- function(df, col, sample, log2=F) { 
+  control <- df[df[,col] == sample, ]$val
+  if (is.null(control)) { print(df) } 
   df$norm <- df$val/control
-  if (log2 == T){
-    df$norm <- log2(df$norm)
-  }
+  if (log2 == T) { 
+    df$norm <- log2(df$norm) 
+  } 
   return(df)
-}
+} 
